@@ -11,17 +11,60 @@ a {
   text-decoration: none;
 }
 
-.container {
-  background-image: url(top.png);
-  background-size: cover;
+body {
+  background-color: rgba(245,34,45,0.8);
+}
+
+header {
+  height:60px;
+  width:100%;
+  background-color: rgba(34,49,52,0.9);
+}
+
+.headerList {
+  float: right;
+}
+
+.headerList a {
+  line-height:60px;
+  padding: 0 25px;
+  color: #fff;
+  display: inline-block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.headerList a:hover {
+  background-color: rgba(255,255,255,0.3);
+  text-decoration: none;
+}
+
+.main {
+  height:400px;
 }
 
 .main_title {
   width: 100%;
-  padding: 0 15px;
+  padding: 30px 15px;
   margin: 0 auto;
 }
 
 .main_title h1 {
-  color:#fff;
+  color: #fff;
+  font-size: 70px;
+  text-align: center;
+}
+
+footer {
+  height: 65px;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+    
+}
+
+footer p {
+  color: black/*#b3aeb5*/;
+  font-size: 12px;
+  text-align: center;
 }
