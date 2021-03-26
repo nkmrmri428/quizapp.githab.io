@@ -96,4 +96,3 @@ while (handlerIndex < buttonLength) {
 });
   handlerIndex++;
 }
-
