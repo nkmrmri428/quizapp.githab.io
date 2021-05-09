@@ -1,10 +1,10 @@
-* {
+ * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+  font-family:"Yu Gothic UI","Hiragino Kaku Gothic ProN";
 }
 
 a {
@@ -12,13 +12,13 @@ a {
 }
 
 body {
-  background-color: rgba(245,34,45,0.8);
+  background-color: rgba(245,34,45,0.7);
 }
 
 header {
   height:60px;
   width:100%;
-  background-color: rgba(34,49,52,0.9);
+  background-color: #1d6dcfb9;
 }
 
 .headerList {
@@ -50,9 +50,24 @@ header {
 }
 
 .main_title h1 {
-  color: #fff;
-  font-size: 70px;
   text-align: center;
+}
+
+.main_title h1 span {
+  color: white;
+  font-size: 70px;
+  position:relative;
+  
+}
+
+.main_title h1 span::after{
+  content:attr(data-text);
+  text-shadow:1px 0 0 #1d6dcf,0 1px 0 #1d6dcf,-1px 0 0 #1d6dcf,0 -1px 0 #1d6dcf;
+  color:#fff;
+  position:absolute;
+  left:2px;
+  top:9px;
+  mix-blend-mode:multiply;
 }
 
 footer {
@@ -63,8 +78,11 @@ footer {
     
 }
 
-footer p {
+p {
   color: black/*#b3aeb5*/;
-  font-size: 12px;
   text-align: center;
+}
+
+footer p {
+  font-size: 12px;
 }
