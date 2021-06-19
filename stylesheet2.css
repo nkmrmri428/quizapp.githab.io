@@ -1,67 +1,82 @@
-<!doctype html>
-<html class="no-js" lang="">
+* {
+  box-sizing: border-box;
+}
 
-<head>
-  <meta charset="utf-8">
-  <title>Quizアプリ</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="stylesheet2.css">
-    
-  <meta name="theme-color" content="#fafafa">
-</head>
+body {
+  margin: 0;
+  font-family:"Yu Gothic UI","Hiragino Kaku Gothic ProN";
+  background-image: url(img/ok.jpg);
+  background-size: cover;
+}
 
-<body>
-    
-  <header>
-    <div class="container">
-       <div class="headerList">
-        <a href="#">トップ</a>
-        <a href="#">うちなーんちゅクイズとは？</a>
-        <a href="#">クイズ一覧</a>
-        <a href="#">よくある質問</a>
-        <a href="#">お問い合わせ</a>
-       </div> 
-    </div>  
-      
-  </header>
-  
- <div class="main">
-    
-　  <div class="container">
-　    <div class="main_title">
-      　<h1><span data-text="うちなーんちゅ">うちなーんちゅクイズ</span></h1>
-        <p>これが分かればあなたも「うちなーんちゅ（沖縄の人）」さぁ～</p>
-　    </div>
-  
-    <div class="container">
-      <div id="js-question" class="mt-3 alert alert-success" role="alert">
-        A simple success alert—check it out!
-      </div>
-      
-      <div id="js-items" class="d-flex justify-content-center">
-        <button type="button" id="js-btn-1" class="btn btn-success">success</button>
-        <button type="button" id="js-btn-2" class="ml-1 btn btn-success">success</button>
-        <button type="button" id="js-btn-3" class="ml-1 btn btn-success">success</button>
-        <button type="button" id="js-btn-4" class="ml-1 btn btn-success">success</button>
-      </div>
-    </div>
-  </div>
- </div>　
-<footer>
-    <div>
-    <p>@2021 m.nakamura</p>
-    </div>
-</footer>
-  
-<script src="index2.js"></script>
-    
-</body>
+a {
+  text-decoration: none;
+}
 
-</html>
+header {
+  height:60px;
+  width:100%;
+  background-color: #70a9ffe8;
+  text-align: center;
+}
+
+.headerList a {
+  line-height:60px;
+  padding: 0 33px;
+  color: #fff;
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+.headerList a:hover {
+  background-color: rgba(255,255,255,0.3);
+  text-decoration: none;
+}
+
+.main {
+  height: 400px;
+}
+
+.main_title {
+  width: 100%;
+  padding: 30px 15px;
+  margin: 0 auto;
+}
+
+.main_title h1 {
+  text-align: center;
+}
+
+.main_title h1 span {
+  color: white;
+  font-size: 70px;
+  position:relative;
+  
+}
+
+.main_title h1 span::after{
+  content:attr(data-text);
+  text-shadow:1px 0 0 #1d6dcf,0 1px 0 #1d6dcf,-1px 0 0 #1d6dcf,0 -1px 0 #1d6dcf;
+  color:#fff;
+  position:absolute;
+  left:2px;
+  top:9px;
+  mix-blend-mode:multiply;
+}
+
+footer {
+  height: 65px;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+    
+}
+
+p {
+  color: black/*#b3aeb5*/;
+  text-align: center;
+}
+
+footer p {
+  font-size: 12px;
+}
