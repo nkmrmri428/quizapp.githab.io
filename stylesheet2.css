@@ -1,36 +1,30 @@
- * {
+* {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   font-family:"Yu Gothic UI","Hiragino Kaku Gothic ProN";
+  background-image: url(img/ok.jpg);
+  background-size: cover;
 }
 
 a {
   text-decoration: none;
 }
 
-body {
-  background-color: rgba(245,34,45,0.7);
-}
-
 header {
   height:60px;
   width:100%;
-  background-color: #1d6dcfb9;
-}
-
-.headerList {
-  float: right;
+  background-color: #70a9ffe8;
+  text-align: center;
 }
 
 .headerList a {
   line-height:60px;
-  padding: 0 25px;
+  padding: 0 33px;
   color: #fff;
   display: inline-block;
-  float: left;
   transition: all 0.5s;
 }
 
@@ -40,7 +34,7 @@ header {
 }
 
 .main {
-  height:400px;
+  height: 400px;
 }
 
 .main_title {
